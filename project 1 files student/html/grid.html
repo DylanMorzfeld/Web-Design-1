@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cooking Tracker | Foodie Flix</title>
+  <link rel="stylesheet" href="../css/grid-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Dylan's Steakeria</h1>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="grid.html" class="active">Shows</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        
+      </ul>
+    </nav>
+
+    <div class="hero">
+      <h2>Track Your <span>Cooking Shows</span> & <span>Food Films</span></h2>
+      <p>Keep your favorite culinary stories, series, and movies all in one delicious list!</p>
+      <button class="btn" id="addShowBtn">+ Add New Title</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="tracker">
+      <h2 class="section-title">To Watch List</h2>
+      <div class="main-grid" id="showGrid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Dylan's Steakeria | All Rights Reserved</p>
+  </footer>
+
+  <script src="../javascript/grids.js"></script>
+</body>
+</html>
