@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Signup</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="space-bg">
+
+    <div class="page-nav">
+        <a class="btn nav-btn active" href="../pages/index.html">Mission Signup</a>
+        <a class="btn nav-btn" href="../pages/roster.html">Crew Roster</a>
+        <a class="btn nav-btn" href="../pages/missions.html">Previous Missions</a>
+    </div>
+
+    <div class="container">
+        <h1 class="glow-text">🚀 Space Mission Signup</h1>
+        <p class="subtext">Join our elite interstellar crew and embark on a mission beyond the stars.</p>
+
+        <form id="signupForm" class="form-card">
+
+            <fieldset class="input-section">
+                <legend>Personal Information</legend>
+
+                <label>Name *</label>
+                <input type="text" id="name" required>
+
+                <label>Email *</label>
+                <input type="email" id="email" required>
+            </fieldset>
+
+            <fieldset class="input-section">
+                <legend>Mission Role</legend>
+
+                <label>Desired Role *</label>
+                <select id="role" required>
+                    <option value="">Select a role</option>
+                    <option>Pilot</option>
+                    <option>Engineer</option>
+                    <option>Scientist</option>
+                    <option>Medic</option>
+                    <option>Navigator</option>
+                </select>
+
+                <label>Destination *</label>
+                <select id="destination" required>
+                    <option value="">Select destination</option>
+                    <option>Mars</option>
+                    <option>Moon</option>
+                    <option>Space Station</option>
+                    <option>Europa</option>
+                    <option>Titan</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="input-section">
+                <legend>Experience Level</legend>
+
+                <div class="radio-group">
+                    <label><input type="radio" name="experience" value="Beginner" required> Beginner</label>
+                    <label><input type="radio" name="experience" value="Intermediate"> Intermediate</label>
+                    <label><input type="radio" name="experience" value="Veteran"> Veteran</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="input-section">
+                <legend>Optional Details</legend>
+
+                <label>Favorite Space Snack</label>
+                <input type="text" id="snack" maxlength="25">
+                <div class="char-counter" id="snackCounter">0 / 25</div>
+
+                <label>Mission Motto</label>
+                <textarea id="motto" rows="3" maxlength="120"></textarea>
+                <div class="char-counter" id="mottoCounter">0 / 120</div>
+            </fieldset>
+
+            <button type="submit" class="btn">Join Mission</button>
+
+        </form>
+    </div>
+
+    <script src="../javascript/script.js"></script>
+</body>
+</html>
